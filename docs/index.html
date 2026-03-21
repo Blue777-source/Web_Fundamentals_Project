@@ -1,26 +1,74 @@
-
-
 <!--
-Note from Justin to Lead developer:
-This is the nav I build for game_site.html I'd recomend using it for this page
-
-    <header>
-        <img src="" alt="Main logo">
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-And this is the footer:
-
-    <footer id="contact">
-        <p>Email: thebriefing@gmail.com | Phone: (801) GG3-GAMES</p>
-        <p>&copy; The Briefing 2026. All rights reserved.</p>
-    </footer>
-
+HOME PAGE
+Blue's Team
+Author: Spencer Santos
+Contributors: 
+-Client: Mahonri Blue Villarete
+-Lead: Spencer Santos
+-Jrs: Joseph Duren, Justin Hair
+Date: 20 Mar 2026
+Sources:
+[0]
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <header> <!--Navigation bar on top-->
+            <img src="" alt="Main logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <section id="hero-sections"> <!--You'd want to use grid or flex to separarte the two-->
+                <div>
+                    <h1>Best Mislim Shooter Reviews</h1>
+                </div>
+                <div>
+                    <a href="subpages/game_list.html">Review Selection</a>
+                    <a href="#">Top Rated</a>
+                </div>
+            </section>
+        </div>
+        <main>
+            <div>
+                <h1>Featured</h1> <!--Featured portion-->
+            </div>
+            <aside>
+                <img id="logo_big">
+                <p>Click to see description</p>
+                <button>The Briefing</button>
+            </aside>
+            <section>
+               <a>The Briefing</a>
+               <a>Rating Section</a>
+               <a>Game Reviews</a>
+            </section>
+        </main>
+        <div id="game_cat"> <!--Game categories portion-->
+            <section>
+                <h1>Game Categories</h1>
+            </section>
+            <section>
+                <h2>FPS</h2>
+                <h2>RPG</h2>
+                <h2>MMO</h2>
+                <h2>Puzzle</h2>
+            </section>
+        </div>
+        <footer id="contact"> <!--Footer-->
+            <p>Email: thebriefing@gmail.com | Phone: (801) GG3-GAMES</p>
+            <p>&copy; The Briefing 2026. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
