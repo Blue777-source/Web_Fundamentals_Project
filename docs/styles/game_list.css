@@ -1,0 +1,29 @@
+/* 
+Created by: Justin Hair
+
+
+Github copilot assistated in:
+- the creation of :root 
+- fetching the right font family from the google API
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&family=Stardos+Stencil:wght@400;700&display=swap");
+
+/* Main colors and fonts */
+:root {
+    --olive-green: #4B5320;
+    --khaki: #C3B091;
+    --dark-army-green: #1F2A1F;
+    --jungle-green: #355E3B;
+    --tactical-red: #8B2E2E;
+    --off-white: #E8E4C9;
+}
+
+body {
+    font-family: "Special Elite", "Times New Roman", serif;
+}
+
+h1, h2 {
+    font-family: "Stardos Stencil", "Stencil", "Impact", sans-serif;
+}
