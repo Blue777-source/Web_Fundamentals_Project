@@ -22,8 +22,10 @@ Github copilot assistated in:
 
 body {
     font-family: "Special Elite", "Times New Roman", serif;
+    color: var(--off-white);
+    background-color: var(--dark-army-green);
 }
 
 h1, h2 {
     font-family: "Stardos Stencil", "Stencil", "Impact", sans-serif;
-}
+} 

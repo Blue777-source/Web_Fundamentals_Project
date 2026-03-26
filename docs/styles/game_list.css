@@ -5,12 +5,13 @@ Created by: Justin Hair
 Github copilot assistated in:
 - the creation of :root 
 - fetching the right font family from the google API
+- improving color usage
 */
 
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&family=Stardos+Stencil:wght@400;700&display=swap");
 
-/* Main colors and fonts */
+/* Main colors and fonts */ 
 :root {
     --olive-green: #4B5320;
     --khaki: #C3B091;
@@ -22,8 +23,77 @@ Github copilot assistated in:
 
 body {
     font-family: "Special Elite", "Times New Roman", serif;
+    color: var(--off-white);
+    background-color: var(--dark-army-green);
 }
 
 h1, h2 {
     font-family: "Stardos Stencil", "Stencil", "Impact", sans-serif;
+    color: var(--off-white);
+}
+
+
+
+/* Main content of page */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--dark-army-green);
+    justify-items: center;
+}
+
+main h1 {
+    text-align: center;
+    grid-column: 1;
+    color: var(--tactical-red);
+    font-size: 2.5em;
+    margin: 30px 0;
+}
+
+.game_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 3px solid var(--jungle-green);
+    border-left: 6px solid var(--tactical-red);
+    background-color: var(--jungle-green);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game_card:hover {
+    transform: translate(5px, -6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    border-color: var(--khaki);
+}
+
+.game_card img {
+    grid-column: 1;
+    grid-row: 1/5;    
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid var(--dark-army-green);
+}
+
+.game_card h2 {
+    grid-column: 2;
+    color: var(--khaki);
+    margin-top: 0;
+}
+
+.game_card p {
+    grid-column: 2;
+    margin: 8px 0;
+    color: var(--off-white);
+}
+
+.game_card strong {
+    color: var(--tactical-red);
 }
