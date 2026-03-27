@@ -5,6 +5,8 @@ Created by: Justin Hair
 Github copilot assistated in:
 - the creation of :root 
 - fetching the right font family from the google API
+- centering game image
+- teaching me how to use min and vw (min choses lowest value, vw is viewport width)
 */
 
 
@@ -29,3 +31,48 @@ body {
 h1, h2 {
     font-family: "Stardos Stencil", "Stencil", "Impact", sans-serif;
 } 
+
+
+
+
+main {
+    width: min(800px, 92vw);
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--tactical-red);
+    text-align: center;
+    margin: 20px 0;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: 0 0 1em;
+}
+
+#button-to-game-list {
+    text-decoration: none;
+    display: block;
+    width: min(300px, 50%);
+    text-align: center;
+    margin: 1em auto;
+    padding: 10px 20px;
+    background-color: var(--jungle-green);
+    color: var(--off-white);
+    border: 2px solid var(--khaki);
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.15s, box-shadow 0.2s;
+}
+
+#button-to-game-list:hover {
+    transform: translate(2px, -3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    border-color: var(--khaki);
+}
+
+
+
+
