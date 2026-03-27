@@ -1,71 +1,54 @@
 <!--
-Dev: Justin Hair, as well as Joseph Duren
-Built for WDD130
+Author: Joseph Duren
+WWD130
+3/18/2026
 
+Soruces:
+[0] https://www.w3schools.com/html//html_css.asp - Formatting help
+[1] https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css -How to chnage image sized
 -->
-
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Briefing - Game List</title>
-    <link rel="stylesheet" href="../styles/game_list.css">
+    <title>The Breifing</title>
+    <link rel="stylesheet" href="game_list.css">
 </head>
 <body>
-    <!-- This is the nav section -->
-    <header>
-        <img src="../images/logo.png" alt="The Briefing logo" width="120">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="game_list.html">Games List</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- This is the main content -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Metal+Mania&family=Pangolin&family=Saira+Stencil+One&family=Smokum&family=Special+Elite&display=swap');
+</style>
+    <nav>
+        <ul>
+            <li> <a href="Web_Fundamentals_Project\docs\index.html">Home</a></li>
+            <li> Games List </li>
+            <li> <a href="Web_Fundamentals_Project\docs\index.html"> Game Title</a> </li>
+        </ul>
+    </nav>
     <main>
-        <h1>Game List</h1>
-
-        <!-- Each game card is here -->
-        <a href="chrono_strike.html" class="game_card">
-            <img src="../images/gamelogo1.png" alt="Chrono-Strike logo">
-            <div class="game_info">
-                <h2>Chrono-Strike</h2>
-                <p>Play this fast paced, futuristic FPS shooter today.</p>
-                <p><strong>Rating:</strong> 4.5/5</p>
-                <p>Game was fun. Graphics were good, though it ran a little slow.</p>
-            </div>
-        </a>
-
-        <a href="bio_shockwave.html" class="game_card">
-            <img src="../images/gamelogo2.png" alt="Bio-Shockwave logo">
-            <div class="game_info">
-                <h2>Bio-Shockwave</h2>
-                <p>An underwater FPS shooter unlike any other.</p>
-                <p><strong>Rating:</strong> 3.9/5</p>
-                <p>Gameplay gets stale after a while and performance can be slow.</p>
-            </div>
-        </a>
-
-        <a href="volcano_strike.html" class="game_card">
-            <img src="../images/gamelogo3.png" alt="Volcano Strike logo"> 
-            <div class="game_info">
-                <h2>Volcano Strike</h2>
-                <p>Fiery, fast paced, and fun, this game keeps the action going.</p>
-                <p><strong>Rating:</strong> 4.7/5</p>
-                <p>Excellent game with nonstop action and strong replay value.</p>
-            </div>
-        </a>
-    </main>
-
-    <!-- This is the footer section -->
-    <footer id="contact">
-        <p>Email: thebriefing@gmail.com | Phone: (801) GG3-GAMES</p>
-        <p>&copy; The Briefing 2026. All rights reserved.</p>
+        <div class="logo">
+            <h1> Game List</h1>
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="games">
+            <img src="gamelogo1.png" alt="gamelogo1">
+            <h3>Chrono-Strike</h3>
+            <h6>Play this faced paced, furtrist FPS shooter today!</h6>
+            <p>4.5/5</p>
+            <p>Game was fun! Though the graphics were good, thogh it ran slow.</p>
+            <br>
+            <img src="gamelogo2.png" alt="gamelogo2">
+            <h3>Bio-Shockwave</h3>
+            <h6>An underwater FPS shooter unlike any other!</h6>
+            <p>3.9/5</p>
+            <p>Game was lowkey mid. Ran slow and the gamplay gets stale after a while</p>
+            <br>
+            <img src="gamelogo3.png" alt="gamelogo3">
+            <h3>Volcano Strike</h3>
+            <h6>Firey, fast paced, and fun, you wont be able to put this game down!</h6>
+            <p>4.7/5</p>
+            <p>Exleent game, couldnt stop palying. Super fun action.</p>
+        </div>
+    <footer>
+      <p>Email us at: thebrefing@gmail.com or call us at: (123)-456-7890</p>
     </footer>
-</body>
+ </body>
 </html>
