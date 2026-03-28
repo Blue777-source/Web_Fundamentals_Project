@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&family=Stardos+Stencil:wght@400;700&display=swap");
+
+:root {
+    --olive-green: #4B5320;
+    --khaki: #C3B091;
+    --dark-army-green: #1F2A1F;
+    --jungle-green: #355E3B;
+    --tactical-red: #8B2E2E;
+    --off-white: #E8E4C9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 24px;
+    background-color: var(--olive-green);
+    color: var(--khaki);
+    font-size: 0.9em;
+    border-bottom: 3px solid var(--tactical-red);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border: 2px solid var(--khaki);
+    padding: 4px;
+    background-color: var(--dark-army-green);
+    margin-left: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    padding: 15px 100px;
+    font-size: 1.6em;
+    color: var(--off-white);
+    text-decoration: none;
+    border: 1px solid var(--khaki);
+    background-color: rgba(31, 42, 31, 0.5);
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+header nav a:hover {
+    background-color: var(--khaki);
+    color: var(--dark-army-green);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--olive-green);
+    color: var(--khaki);
+    font-size: 0.9em;
+}
+
